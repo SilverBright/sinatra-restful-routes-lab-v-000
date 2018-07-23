@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
     @recipe.save
 
     # redirect to "/recipes/#{@recipe.id}"
-    redirect to "/show/#{@recipe.id}"
+    redirect to "/recipes/#{@recipe.id}"
   end
 
   get '/recipes/:id' do
